@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<visual application="VisualTouch" version="1.04.1">
+    <options>
+        <server_ip>192.168.10.1</server_ip>
+        <server_port>16945</server_port>
+        <enable_server_filter>off</enable_server_filter>
+        <page>0</page>
+        <touch_list>0</touch_list>
+        <screen_size>FULL-SCREEN</screen_size>
+        <grid_layout>20x18</grid_layout>
+        <enable_sounds>on</enable_sounds>
+        <check_updates>off</check_updates>
+        <start_up>off</start_up>
+        <options_mode>0</options_mode>
+        <show_dummies>off</show_dummies>
+        <language></language>
+        <password>0112</password>
+        <password_enable>off</password_enable>
+        <colour_main_pen>0xAF0B80</colour_main_pen>
+        <colour_main_brush>0x0A0A0A</colour_main_brush>
+        <colour_dialog_pen>0xD0D0D0</colour_dialog_pen>
+        <colour_dialog_brush>0x0A0A0A</colour_dialog_brush>
+        <colour_dialog_font>0xD0D0D0</colour_dialog_font>
+        <short_list />
+    </options>
+</visual>
