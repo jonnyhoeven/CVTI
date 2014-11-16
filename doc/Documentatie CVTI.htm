@@ -1,0 +1,2169 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>(CVTI) Camera &amp; Visual Touch Interface</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#4F81BD;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#DBE5F1;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:15.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#243F60;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-weight:normal;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:11.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:22.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:8.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:25.0pt;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";
+	color:#595959;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+em
+	{color:#243F60;
+	text-transform:uppercase;
+	letter-spacing:.25pt;
+	font-style:normal;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-link:"Document Map Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Intense Quote Char";
+	margin-top:12.0pt;
+	margin-right:54.0pt;
+	margin-bottom:12.0pt;
+	margin-left:54.0pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#4F81BD;}
+span.MsoSubtleEmphasis
+	{color:#243F60;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#243F60;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-weight:bold;}
+span.MsoSubtleReference
+	{color:#4F81BD;
+	font-weight:bold;}
+span.MsoIntenseReference
+	{color:#4F81BD;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;}
+span.MsoBookTitle
+	{letter-spacing:0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#4F81BD;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.75pt;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.Style1, li.Style1, div.Style1
+	{mso-style-name:Style1;
+	mso-style-link:"Style1 Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	background:#4F81BD;}
+span.Style1Char
+	{mso-style-name:"Style1 Char";
+	mso-style-link:Style1;
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-link:"Document Map";
+	font-family:"Tahoma","sans-serif";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	background:#DBE5F1;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	color:#243F60;
+	text-transform:uppercase;
+	letter-spacing:.75pt;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	color:#365F91;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	color:#365F91;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	color:#365F91;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	color:#365F91;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-style:italic;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	color:#595959;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-link:"Intense Quote";
+	color:#4F81BD;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:36.0pt 36.0pt 36.0pt 36.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=NL link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 5.0</h6>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoTitle><a name="_Toc259439333">Camera &amp; Visual Touch Interface
+handleiding &amp; technische informatie</a></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439334">Voorwoord</a></h3>
+
+</div>
+
+<p class=MsoNormal>Het aanraakgevoelig scherm in combinatie met de software CVTI
+biedt bedien en afspeelmogelijkheden voor de zaal camera’s en maakt het
+mogelijk de verschillende bedienschermen zaalverlichting met een code uit te
+voeren. Met behulp van het tabblad beheer kunt u de computers van de aanraak gevoelige
+schermen, de verlichting &amp; luiken aansturingcomputer “server” en de zaal camera
+her-starten. Wees niet bang om deze schermen te bedienen, gevaarlijke functies
+zijn uitgevoerd met een technisch wachtwoord. De werkelijke verlichting &amp;
+luiken aansturingcomputer blijft gewoon actief ook als de computer van het aanraakgevoelig
+scherm die u gebruikt vastloopt. Indien een lichttechnicus gebruik maakt van de
+professionele licht-tafel voor een voorstelling zet deze gebruikelijk de verlichtingsbediening
+van de verlichting &amp; luiken aansturingcomputer backstage op non actief. U
+kunt werkelijk geen fouten maken, als dit toch onverhoopt mocht gebeuren zijn
+wij als technici verantwoordelijk en zijn wij uiteraard bereid om aan de hand
+van uw aanmerkingen dit spoedig te verhelpen. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439335">Reacties</a></h4>
+
+</div>
+
+<p class=MsoNormal>Mocht u vragen of opmerkingen hebben na het lezen van deze
+handleiding, horen wij dit graag. Voor verdere ontwikkeling en verbetering van
+deze handleiding en software zijn uw reacties onmisbaar. Reacties kunt u het
+beste versturen naar <span lang=EN-US><a href="mailto:td@dedoelen.nl"><span
+lang=NL>td@dedoelen.nl</span></a></span>. Wij zijn onder meer geïnteresseerd
+naar uw wensen voor de bediening van het zaallicht systeem. Als u merkt dat de
+bediening van de verlichting voor uw toepassing onnodig energie verbruikt
+zullen wij aparte bedienmogelijkheden aanbieden.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439336">Laatste veranderingen</a></h4>
+
+</div>
+
+<p class=MsoNormal>De laatste versie van deze documentatie is altijd te lezen
+vanaf het touch screen bedienpaneel.</p>
+
+<p class=MsoNormal>Aangezien de huidige systemen nog in ontwikkeling zijn en uw
+reacties en opmerkingen nog steeds bijgewerkt worden is de documentatie
+onderhevig aan verandering. Om het voor u gemakkelijker te maken zijn de
+laatste veranderingen en aanpassingen van het systeem te vinden aan het einde
+van de deze documentatie. Zodoende hoeft u de documentatie bij elke versie
+verandering niet opnieuw te lezen en kunt u zich bekend maken met de nieuwe.</p>
+
+<p class=MsoNormal>Indien de computer in de cabine en backstage links niet meer
+functioneren is deze handleiding als boekwerk te vinden bij de verlichting
+&amp; luiken aansturingcomputer backstage links aan de binnenzijde van de kastdeur.
+Ook is deze documentatie te vinden op het doelen intranet. Met behulp van het
+volgende adres: //nas/td/documentatie/CVTI</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'>Belangrijk om te weten</h4>
+
+</div>
+
+<p class=MsoNormal>Deze handleiding is voor de volledigheid waarschijnlijk
+uitgebreider dan voor u voor belang tevens komen andere delen van de
+installatie naar voren die bij calamiteiten gebruikt kunnen worden, daarbij
+staat het “ELC kastje” op dit moment backstage centraal als back-up
+mogelijkheid voor de bediening van het zaallicht vanaf de aanraak gevoelige
+schermen. Aangezien tijdens problemen gebruikelijk weinig tijd is om de
+handleiding door te nemen, is het wellicht verstandig het hoofdstuk “ELC
+kastje” verderop in deze handleiding voortijdig door te nemen. <a
+name="_Toc259439337"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'>Minimale bedieninstructie</h4>
+
+</div>
+
+<p class=MsoNormal>De eenvoudige manier om de zaal verlicht te krijgen is
+herkenbaar aan de kleur groen:</p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal>Eerst drukt u op de groene knop bovenin het scherm met de
+     tekst “Zaal Verlichting”</li>
+ <li class=MsoNormal>Daarna kiest u voor de groene knop in het midden met de
+     tekst “Werk Verlichting”</li>
+ <li class=MsoNormal>Hierna kiest u voor de groene knop onderin met de tekst “Start
+     Verlichting”</li>
+</ol>
+
+<p class=MsoNormal>Hierdoor start de zaalverlichting voor een periode van 1
+uur.</p>
+
+<p class=MsoNormal>Vaak is het scherm nog uitgeschakeld wanneer u de
+zaalverlichting wenst in te schakelen, daarom kunt u bij een uitgeschakeld
+scherm altijd op het midden van het scherm drukken om direct “Werk Verlichting”
+te starten.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439339">Bedienschermen</a></h3>
+
+</div>
+
+<p class=MsoNormal>De bediening is opgedeeld in verschillende tabbladen.</p>
+
+<p class=MsoNormal><img border=0 width=502 height=26
+src="Documentatie%20CVTI_files/image001.jpg"><a name="_Toc259439340"></a></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'>Zaal Camera</h4>
+
+</div>
+
+<p class=MsoNormal>Bekijk de zaal met behulp van de bedienbare zaal camera.<a
+name="_Toc259439341"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'>Zaal Verlichting</h4>
+
+</div>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:0cm'>Start de bedienschermen
+van de verlichting via “Visual Touch” en bedien de verlichting &amp; luiken
+aansturingcomputer.<a name="_Toc259439342"></a></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:0cm'>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'>Skybox Camera’s</h4>
+
+</div>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:0cm'>Bekijk de Skybox
+Camera’s voor zicht op de luiken in het technisch plafond, bouwkundig plafond
+en de Lier van het Line-Array Geluidssysteem.<a name="_Toc259439343"></a></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:0cm'>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'>Beheer</h4>
+
+</div>
+
+<p class=MsoListParagraph style='margin-left:0cm'>Gebruik dit scherm om
+computers of camera’s te herstarten, de laatste software wijzigingen te lezen
+of om CVTI af te sluiten of te verkleinen. </p>
+
+<p class=MsoNormal>U kunt een tabblad kiezen door deze op het scherm aan te
+raken, waarna het onderliggende gedeelte van het scherm gebruikt word om uw
+keuze weer te geven. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439344"><span lang=EN-US>Zaal Camera</span></a></h3>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=721 height=405 id="Picture 4"
+src="Documentatie%20CVTI_files/image002.jpg"></p>
+
+<p class=MsoNormal>Met behulp van dit scherm kunt u de zaal camera bekijken
+&amp; bedienen.</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439345">Camera Bediening</a></h3>
+
+</div>
+
+<p class=MsoNormal>Indien u een object in het videoscherm aanraakt zal de
+camera hierop centreren. Hiermee kunt u de camera ook snel verplaatsen door
+meerdere keren achtereenvolgens opnieuw te drukken. Dichter bij de rand van het
+videoscherm zal het camerabeeld verder naar die richting verplaatsen. </p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439346">Beeld In &amp;
+Uitzoomen</a></h4>
+
+</div>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'><img border=0 width=50 height=50
+id="Picture 8" src="Documentatie%20CVTI_files/image003.png">Gebruik de knop met
+het (+) teken om in te zoomen.</h6>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'><img border=0 width=50 height=50
+id="Picture 7" src="Documentatie%20CVTI_files/image004.png">Gebruik de knop met
+het (-) teken om uit te zoomen.</h6>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'>U kunt deze 2 knoppen
+ook ingedrukt houden om sneller achtereenvolgens in of uit te zoomen.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><i>&nbsp;</i></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439347"><span lang=EN-US>Focu</span></a><span
+lang=EN-US>s</span></h4>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=50 height=50 id="Picture 13"
+src="Documentatie%20CVTI_files/image005.png"><img border=0 width=50 height=50
+id="Picture 12" src="Documentatie%20CVTI_files/image006.png"><img border=0
+width=50 height=50 id="Picture 14" src="Documentatie%20CVTI_files/image007.png"></p>
+
+<p class=MsoNormal>De Focus wordt bepaald door de afstand tot het object waar u
+op dit moment naar kijkt. Aangezien de auto focus niet altijd optimaal functioneert
+wanneer deze in een donkere zaal gebruikt word, kunt dit zelf aanpassen.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><span lang=EN-US>Lichtgevoeligheid
+(Brightness)</span></h4>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=50 height=50 id="Picture 10"
+src="Documentatie%20CVTI_files/image008.png"><img border=0 width=50 height=50
+id="Picture 9" src="Documentatie%20CVTI_files/image009.png"><img border=0
+width=50 height=50 id="Picture 11" src="Documentatie%20CVTI_files/image010.png"></p>
+
+<p class=MsoNormal>Met de lichtgevoeligheid “brightness” knop kunt u het beeld
+lichter of donkerder maken, waardoor u in een donkere zaal zelf kunt bepalen
+waar uw licht balans ligt. Met de auto knop probeert de camera een gemiddeld
+lichtbalans te behouden. De camera schakelt bij een donkere zaal automatisch
+naar de “Night View” stand, deze stand reageert trager door een langere
+sluitertijd, als deze stand aktief is kunt u met de knoppen de sluitertijd
+aanpassen. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439348"><span lang=EN-US>Preset
+Bediening</span></a></h4>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=51 height=32 id="Picture 15"
+src="Documentatie%20CVTI_files/image011.png"><img border=0 width=51 height=32
+id="Picture 16" src="Documentatie%20CVTI_files/image012.png"><img border=0
+width=51 height=32 id="Picture 17" src="Documentatie%20CVTI_files/image013.png"><img
+border=0 width=51 height=32 id="Picture 18"
+src="Documentatie%20CVTI_files/image014.png"></p>
+
+<p class=MsoNormal>Met de preset bediening kunt u snel en gemakkelijk naar een
+vooraf ingestelde camera positie, zoom- en focusniveau gaan. Mocht u wensen
+hebben voor andere preset standen laat dit dan gerust weten.</p>
+
+<p class=MsoNormal>Deze camera zal na 3 uur en altijd om 3 uur ’s nachts (vanwege
+een herstart) naar de “Podium” preset stand terug gaan.</p>
+
+<p class=MsoNormal><i>&nbsp;</i></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439349"><span lang=EN-US>Zaal Verlichting</span></a></h3>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=520 height=292 id="Picture 19"
+src="Documentatie%20CVTI_files/image015.jpg"></p>
+
+<p class=MsoNormal>Met behulp van dit scherm kunt u de bediening van het
+zaallicht starten. <a name="_Toc259439350"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Technische Bediening                        (
+Technische code nodig)     (Deze bediening zal niet vanzelf afgesloten worden)</h6>
+
+</div>
+
+<p class=MsoNormal>Hiermee kunt u luiken bedienen, de Visual D.M.X. &quot;Master&quot;
+fader en timers aan of uit zetten en het faderpaneel bedienen.<a
+name="_Toc259439351"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Zaal Verlichting                               (Geen
+code nodig)                 (Deze bediening sluit na 15 min.)</h6>
+
+</div>
+
+<p class=MsoNormal>Hiermee kunt u werk verlichting bedienen die met behulp van
+een timer vanzelf weer word uitgeschakeld.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Repetitie / B.L.V.D. verlichting         (Code
+nodig)                          (Deze bediening sluit na 15 min.)</h6>
+
+</div>
+
+<p class=MsoNormal>Aparte afgeschermde bediening voor het RPHO, waarmee een
+vaste repetitie stand kan worden vast gezet.</p>
+
+<p class=MsoNormal>(Met behulp van het slot icoon kunt u zien voor welke bedienpanelen
+u een code nodig heeft.)</p>
+
+<p class=MsoNormal><i>&nbsp;</i></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439353">Werkverlichting</a></h3>
+
+</div>
+
+<p class=MsoNormal>Met behulp van het werkverlichting bedienscherm kunt u het
+podium, de zaal, of de loges met een timer aanzetten. (De tijd die u kiest word
+niet voor u opgeteld).<a name="_Toc259439354"> Is de L.E.D. verlichting in de
+zaal wit van kleur dan moet u ervan uitgaan dat de verlichting vanzelf weer uit
+zal schakelen. Wilt u dit voorkomen dan kunt u via de Repetitie &amp; B.L.V.D.
+bediening een permanente stand aanzetten waarna u zelf verantwoordelijk bent
+voor uitschakeling. </a></p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Podium Uitloop Timer</h6>
+
+</div>
+
+<p class=MsoNormal>Wanneer de podiumverlichting timer uitloopt zal de L.E.D.
+verlichting in de zaal rood kleuren</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'><a name="_Toc259439355">Zaal Uitloop Timer</a></h6>
+
+</div>
+
+<p class=MsoNormal>Wanneer de zaalverlichting timer uitloopt zal de L.E.D.
+verlichting in de zaal rood kleuren</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'><a name="_Toc259439356">Loges Uitloop Timer</a></h6>
+
+</div>
+
+<p class=MsoNormal>Wanneer de logeverlichting timer uitloopt zal deze gedurende
+5 minuten langzaam gedimd worden.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'>Deze bediening is
+vrij om te starten zonder opgave van een code en zal na 15 minuten weer
+afgesloten worden.</p>
+
+<p class=MsoNormal align=center style='text-align:center'>Voor inschakeling van
+de sluizenverlichting kunt u het aanraakgevoelig scherm niet gebruiken
+(Centrale ingang uitgezonderd) u moet hiervoor bij het zaal sluizen bedienpaneel
+van de zaaldeuren zijn.<a name="_Toc259439357"></a></p>
+
+<p class=MsoNormal align=center style='text-align:center'><i>&nbsp;</i></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3>Repetitie / BLVD verlichting</h3>
+
+</div>
+
+<p class=MsoNormal>Na het opgeven van de RPHO / BLVD Code dient u eerst de “Repetitie
+Aan” knop te gebruiken. Hierdoor zullen verlichtingstimers van het werkverlichting
+bedienpaneel uitgeschakeld worden en zal de basis concert stand “opkomen”.</p>
+
+<p class=MsoNormal>Het faderpaneel biedt een manier om verlichting directer te bedienen.
+Het faderpaneel bestaat uit een groep knoppen die de oorspronkelijke bediening
+van de &quot;faders / schuiven&quot; van het zaallicht proberen te behouden.
+(Zonder schokken in dimmer verloop)</p>
+
+<p class=MsoNormal>Na bediening van dit scherm bent u ook verantwoordelijk voor
+uitschakeling van de zaalverlichting. Gebruik hiervoor de knop “Repetitie
+Direct Uit”.</p>
+
+<p class=MsoNormal>Het is niet ondenkbaar dat de zaalverlichting na afloop aan
+moet blijven voor andere doeleinden. Daarom kunt u na afloop ook gebruik maken
+van de uitloop timer. Gebruik hiervoor de knop “Repetitie Uitlopen”, hierna
+blijft de podiumverlichting 30 minuten en de zaalverlichting gedurende 45
+minuten aan.</p>
+
+<p class=MsoNormal align=center style='text-align:center'>Deze bediening start
+na opgave van de RPHO / BLVD code en zal na 15 minuten weer afgesloten worden. Voor
+inschakeling van de sluizenverlichting kunt u het aanraakgevoelig scherm niet
+gebruiken (Centrale ingang uitgezonderd) u moet hiervoor bij het dranger<i> </i>bedienpaneel
+van de zaaldeuren zijn.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><i>&nbsp;</i></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439358">Technische Bediening</a></h3>
+
+</div>
+
+<p class=MsoNormal>Feitelijk is de technische bediening een combinatie van alle
+bedienpanelen met een paar extra toevoegingen. Vanuit het technisch paneel is
+het mogelijk om de &quot;master- fader of schuif” van Visual D.M.X. uit te
+zetten. Hierdoor kan deze niet meer bediend worden (signaal uitsturen), tenzij
+iemand met een technische code de “master- fader of schuif” weer aanzet met de knop
+&quot;Visual D.M.X. Aan&quot; of wanneer de verlichting &amp; luiken
+aansturingcomputer herstart wordt. Verder bied deze toegang tot de
+luikenbediening, waarmee u een selectie kunt maken van diverse luiken en deze gelijktijdig
+kunt aansturen.</p>
+
+<p class=MsoNormal align=center style='text-align:center'>Deze bediening start
+na opgave van de technische code en <b>dient door uzelf afgesloten te worden</b>.
+Voor inschakeling van de sluizenverlichting kunt u het aanraakgevoelig scherm
+niet gebruiken (Centrale ingang uitgezonderd) u moet hiervoor bij het dranger<i>
+</i>bedienpaneel van de zaaldeuren zijn.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><i>&nbsp;</i></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439359"><span lang=EN-US>Skybox Camera’s</span></a></h3>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=617 height=347 id="Picture 22"
+src="Documentatie%20CVTI_files/image016.jpg"></p>
+
+<p class=MsoNormal>Bekijk de camera’s boven het technisch plafond voor zicht op
+de luiken en de Lier van het Line-Array geluidsysteem. <a name="_Toc259439360"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><span lang=EN-US>Beheer</span></h3>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=582 height=328 id="Picture 1"
+src="Documentatie%20CVTI_files/image017.jpg"></p>
+
+<p class=MsoNormal>Met behulp van dit scherm kunt u beheerders taken uitvoeren.<a
+name="_Toc259439361"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Computer Herstarten                      <b>(Geen
+code nodig)</b></h6>
+
+</div>
+
+<p class=MsoNormal>Hiermee kunt u de lokale computer waar u nu gebruik van
+maakt herstarten.<a name="_Toc259439362"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Camera Herstarten              <b>(Geen
+code nodig)</b></h6>
+
+</div>
+
+<p class=MsoNormal>Hiermee herstart u de zaal camera, het kan tot 3 minuten
+duren voor de camera actief is.<a name="_Toc259439363"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Scherm Schoonmaken                      <b>(Geen
+code nodig)</b></h6>
+
+</div>
+
+<p class=MsoNormal>Schakel de bediening van het scherm gedurende 2 minuten uit,
+hierna is het mogelijk om met een licht vochtige doek vingerafdrukken te
+verwijderen.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Server Herstarten                <b>(TD
+code nodig)</b></h6>
+
+</div>
+
+<p class=MsoNormal>U kunt hiermee op afstand de verlichting &amp; luiken
+aansturingcomputer herstarten, dit zal tot een black-out in de zaal leiden
+indien u geen gebruik maakt van het elc kastje, een licht-tafel of de “Visual
+DMX t.b.v. Licht” Patch tijdelijk los haalt.<a name="_Toc259439364"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>CVTI Afsluiten                                    <b>(TD
+code nodig)</b></h6>
+
+</div>
+
+<p class=MsoNormal>Hiermee sluit u het bediening scherm waarna u terugkeert
+naar de Windows desktop. De CVTI applicatie kunt u opnieuw starten door via het
+start menu te kiezen voor CVTI of door de computer te herstarten.<a
+name="_Toc259439365"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>(De)Activeer volledig scherm         <b>(TD
+code nodig)</b></h6>
+
+</div>
+
+<p class=MsoNormal>Gebruik deze knop om het start menu weer te geven. U kunt
+hiermee ook het formaat van het videoscherm zelf bepalen<a name="_Toc259439366"></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><span lang=EN-US>Wachtwoord invoer scherm</span></h3>
+
+</div>
+
+<p class=MsoNormal><b><img border=0 width=167 height=218 id="Picture 25"
+src="Documentatie%20CVTI_files/image018.jpg"></b></p>
+
+<p class=MsoNormal>Dit scherm wordt zichtbaar zodra u een actie wilt uitvoeren
+die met een code is afgeschermd. Toets de juiste code en druk op OK. Druk op
+wissen om een cijfer te wissen. Indien u geen juiste code heeft, kunt u op het
+Vinkje of het Kruis drukken. Na 60 seconden zal dit scherm vanzelf sluiten.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439367">Technische Informatie</a></h3>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439368">E.L.C. Kastje</a></h4>
+
+</div>
+
+<p class=MsoNormal>Indien het aanraakgevoelig scherm, D.M.X. kabel patches in
+patch kasten, U.T.P. netwerk, de computers of de software niet meer naar
+behoren functioneert, is het mogelijk met behulp van het E.L.C. Kastje
+backstage links in de glazen patch kast onder het dranger bedienpaneel van de
+zaaldeuren direct de zaal verlichting te bedienen. Het E.L.C. Kastje bestaat
+uit 16 knoppen, om de verlichting in te schakelen drukt u op knop 1 voor het
+Podium. Daarna kunt u met de pijltjes toetsen deze geselecteerde groep bedienen.
+Voor podiumverlichting drukt u eerst op knop 2. Vanwege technische
+beperkingen(noodlijn) kan hiermee geen L.E.D. verlichting bediend worden.
+Tevens is de sluizenverlichting (Centrale ingang uitgezonderd) hiermee niet
+bedienbaar.</p>
+
+<p class=MsoNormal>Het E.L.C. Kastje is tevens uitgevoerd met een eigen
+Ononderbroken Stroom Voeding(UPS) welke naar schatting tot 2 dagen blijft
+werken.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>Let op:</b> Het
+elc kastje is alleen bedoeld om de normale bediening tijdens calamiteiten
+tijdelijk te vervangen of te ondersteunen.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<div style='border-top:none;border-left:solid #C0504D 1.0pt;border-bottom:solid #C0504D 1.0pt;
+border-right:none;padding:0cm 0cm 2.0pt 2.0pt'>
+
+<h5 style='border:none;padding:0cm'>Inschakelen van zaal en podium verlichting
+vanaf het E.L.C kastje:</h5>
+
+</div>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Druk op “knop 1”, houd de knop met het
+pijltje naar boven 5 seconden ingedrukt.</h6>
+
+<h6 style='border:none;padding:0cm'>Druk op “knop 2”, houd de knop met het
+pijltje naar boven 5 seconden ingedrukt.</h6>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border-top:none;border-left:solid #C0504D 1.0pt;border-bottom:solid #C0504D 1.0pt;
+border-right:none;padding:0cm 0cm 2.0pt 2.0pt'>
+
+<h5 style='border:none;padding:0cm'>Uitschakelen van zaal en podium verlichting
+vanaf het E.L.C. kastje:</h5>
+
+</div>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Druk op “knop 1”, houd de knop met het
+pijltje naar beneden 5 seconden ingedrukt.</h6>
+
+<h6 style='border:none;padding:0cm'>Druk op “knop 2”, houd de knop met het
+pijltje naar beneden 5 seconden ingedrukt.</h6>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'>Als u het E.L.C.
+kastje altijd op deze manier <i>gebruikt en uitzet</i> is de kans dat deze per
+ongeluk word ingeschakeld veel kleiner.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><i>&nbsp;</i></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439369">Technisch overzicht D.M.X. lijnen t.b.v. Visual
+D.M.X.</a></h3>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=653 height=362
+src="Documentatie%20CVTI_files/image019.png"></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439370">D.M.X. Nodes</a></h4>
+
+</div>
+
+<p class=MsoNormal>Vanaf de verlichting &amp; luiken aansturingcomputer (De
+rechter PC in de kast Backstage Links) worden 2 USB naar DMX “Nodes”
+aangestuurd en gevoed (Een aparte Luiken Node &amp; een Licht Node). Deze USB
+naar DMX Nodes maken het voor een gewone computer mogelijk om de dimmers en
+luiken aan te sturen.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439371">Mergers</a></h4>
+
+</div>
+
+<p class=MsoNormal>De mergers zorgen ervoor dat meerdere signalen van bijvoorbeeld
+een “gast” licht-tafel en de licht-tafel van de doelen samen tegelijk kunnen
+werken. Als de signalen van verschillende bronnen tegenstrijdig blijken, zullen
+de mergers de hoogste waarde doorlaten. Hierdoor komt het dus voor dat meerdere
+signalen ervoor zorgen dat het verlichting niet altijd even gemakkelijk weer
+uit gaat.</p>
+
+<p class=MsoNormal>Daar komt bij dat de mergers bij calamiteiten of lostrekken
+van een D.M.X. kabel de laatste stand behouden. Om dit te herstellen naar
+uitgeschakelde stand heeft u 2 mogelijkheden:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Beide
+mergers herstarten, door de spanningsknop tijdelijk kort uit te schakelen.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-size:11.0pt;line-height:115%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Een DMX kabel met een signaal waarbij alle kanalen op 0 staan aan
+te sluiten.</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:11.0pt;
+line-height:115%'>&nbsp;</span></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439372">Technisch overzicht U.T.P. lijnen t.b.v. Visual
+D.M.X. en camera’s</a></h3>
+
+</div>
+
+<p class=MsoNormal><img border=0 width=632 height=254 id="Diagram 11"
+src="Documentatie%20CVTI_files/image020.png"></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439373">Computer I.P. Adressen
+Tabel</a></h4>
+
+</div>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:33.75pt;border-collapse:collapse;border:none'>
+ <tr style='height:13.45pt'>
+  <td width=235 valign=top style='width:175.95pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.45pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span lang=EN-US>Visual
+  D.M.X. Server PC Backstage</span></p>
+  </td>
+  <td width=107 valign=top style='width:80.5pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.45pt'>
+  <p class=MsoNormal><span lang=EN-US>192.168.10.1</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.2pt'>
+  <td width=235 valign=top style='width:175.95pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:14.2pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span lang=EN-US>Bedien
+  PC Backstage</span></p>
+  </td>
+  <td width=107 valign=top style='width:80.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.2pt'>
+  <p class=MsoNormal><span lang=EN-US>192.168.10.2</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.45pt'>
+  <td width=235 valign=top style='width:175.95pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.45pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span lang=EN-US>Bedien
+  PC Cabine</span></p>
+  </td>
+  <td width=107 valign=top style='width:80.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.45pt'>
+  <p class=MsoNormal><span lang=EN-US>192.168.10.5</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.2pt'>
+  <td width=235 valign=top style='width:175.95pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:14.2pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span lang=EN-US>Zaal
+  Camera</span></p>
+  </td>
+  <td width=107 valign=top style='width:80.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.2pt'>
+  <p class=MsoNormal><span lang=EN-US>192.168.10.100</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.2pt'>
+  <td width=235 valign=top style='width:175.95pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:14.2pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span lang=EN-US>Skybox
+  Camera Links</span></p>
+  </td>
+  <td width=107 valign=top style='width:80.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.2pt'>
+  <p class=MsoNormal><span lang=EN-US>192.168.10.200</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.05pt'>
+  <td width=235 valign=top style='width:175.95pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:15.05pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span lang=EN-US>Skybox
+  Camera Rechts</span></p>
+  </td>
+  <td width=107 valign=top style='width:80.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.05pt'>
+  <p class=MsoNormal><span lang=EN-US>192.168.10.201</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3>Ononderbroken Stroom Voorziening (U.P.S.)</h3>
+
+</div>
+
+<p class=MsoNormal>De volgende onderdelen van de installatie zijn gevoed door
+een U.P.S.:</p>
+
+<p class=MsoNormal>De Visual DMX server, bedien computer, DMX Mergers Backstage
+links, het aanraakgevoelig scherm en de netwerkverbinding (Hub) tussen de bedien
+computer en de Visual DMX server.</p>
+
+<p class=MsoNormal>Bij een Spanningsuitval zal op het scherm van de bedien
+computer backstage links een waarschuwing te lezen zijn met de verwachte
+tijdsduur tot het systeem uitgeschakeld zal worden, daarnaast gaat dit gepaard
+met een pieptoon vanuit de UPS die daaronder gemonteerd is. Gedurende 1 uur zal
+alles blijven werken, na deze periode zal de Bediening en het scherm uitvallen.
+De onbedienbare visual dmx server computer is dan nog gedurende 15 minuten
+actief.</p>
+
+<p class=MsoNormal>Hierna zal ook de server uitvallen. Vanaf dat moment zal de
+DMX-merger backstage links een hold signaal overnemen.</p>
+
+<p class=MsoNormal>Dit signaal zal pas uitvallen als de server computer weer
+word ingeschakeld. Waarna uiteindelijk een Black-out plaats zal vinden. De UPS
+zit aangesloten op de “com” poort van de bedien Computer. De bedien computer
+zendt tijdens een spanningsuitval een “Net Send” Naar alle computers op het
+netwerk. Alle aangesloten windows computers zullen een “net send” melding
+krijgen op het scherm.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439374">Spanningsgroepen</a></h4>
+
+</div>
+
+<p class=MsoNormal>Alle spanning van de Gong, Visual D.M.X. Server en het aanraakgevoelig
+scherm kunt u vinden in de vouwwand links (2<sup>e</sup> etage), deze stroomkast
+staat links achterin, groep nummer 16. Na spanningsuitval zal de noodvoeding
+gedurende 60 minuten volledige functionaliteit behouden, hierna zal de
+gebruikelijke bediening uitvallen. De server blijft aktief zolang de noodvoeding
+voldoende blijft leveren. Als de server computer uitgeschakeld is zal de DMX
+Merger backstage links het signaal overnemen. Zodra de spanning weer terug is
+op groep 16 en de U.P.S. ook leeg geraakt was zal de Visual DMX software
+opnieuw starten en uiteindelijk een blackout veroorzaken.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'><a name="_Toc259439376"><span lang=EN-US>Power
+Over Ethernet (P.O.E.)</span></a></h4>
+
+</div>
+
+<p class=MsoNormal>Deze kastjes in de SER Cabine ruimte in patch kast 11
+voorzien de camera’s van spanning over een normale U.T.P. kabel en is daardoor
+de gemakkelijkst bereikbare locatie om de camera’s tijdelijk stroomloos te
+maken.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439375"><span lang=EN-US>Keyboard Video &amp; Mouse (K.V.M.)
+Switch</span></a></h3>
+
+</div>
+
+<p class=MsoNormal>De K.V.M. Switch bevindt zich boven de 2 computer backstage
+links en bied de mogelijkheid om het beeld, de aanraak gevoelige bediening en
+het toetsenbord te schakelen tussen de verlichting &amp; luiken aansturingcomputer
+en de bediencomputer. U kunt altijd schakelen zonder uitval van het zaallicht. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>Let op: </b>Nadat
+het beeld is omgeschakeld, kan het soms nog tot 10 seconden duren voor het aanraakgevoelig
+scherm weer reageert. Bij herhaaldelijk snel schakelen tussen de 2 computers
+(ongeveer 1 keer p/s) zal Windows XP (De bediencomputer links) onherroepelijk
+moeten worden herstart door de spanningsknop 3 seconde ingedrukt te houden. Omdat
+deze zich hierna niet meer laat bedienen door het aanraakgevoelig scherm.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><i>&nbsp;</i></p>
+
+<div style='border:solid #DBE5F1 3.0pt;padding:0cm 0cm 0cm 0cm;background:#DBE5F1'>
+
+<h2><a name="_Toc259439377">Probleem oplossen</a>.</h2>
+
+</div>
+
+<p class=MsoNormal>Bij problemen met de software van het bedienscherm, kunt u
+vanuit het tabblad beheer op de knop drukken met de tekst “Computer
+herstarten”, gevolgd door “ja”. Bij problemen m.b.t. de server, het laden van
+de knoppen in Visual Touch of geen reactie wanneer u luiken wilt selecteren, kunt
+u de server herstarten.  U kunt bij elke bediencomputer op afstand de server
+computer herstarten. Kies hiervoor bij het tabblad beheer de knop met de tekst
+“Server Herstarten” waarna u de technische code opgeeft. Het herstarten van de
+server duurt gemiddeld 2 tot 3 minuten en zal tot een black-out in de zaal
+leiden. Nadat de server is herstart zal deze niet vanzelf verlichting
+aanzetten, daarom kunt u het beste direct Visual Touch weer starten (bv. Werkverlichting).
+Zodra de server computer actief is zullen de bedienknoppen zichtbaar worden en
+kunt u de verlichting weer aanzetten. Wilt u een Black-out voorkomen dan kunt u
+gebruik maken van het elc kastje om de tijdsduur van het herstarten van de
+server te overbruggen. </p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3>Geen reactie bij inschakelen verlichting.</h3>
+
+</div>
+
+<p class=MsoNormal>Soms komt het voor dat de master fader van Visual DMX nog
+uit staat, schakel deze weer in door in het technisch bedien paneel op de knop
+“Visual DMX aan” te drukken.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439378">Indien verlichting niet meer uit </a>gaat.</h3>
+
+</div>
+
+<p class=MsoNormal>Vanzelfsprekend kunt u allereerst nog kijken of er nog een
+licht-tafel op de mixer positie of de cabine aanstaat. Als ook na het
+herstarten van de server de verlichting niet meer uitgaat, kunt u controleren
+of het ELC kastje onder “ het dranger en sluizen” bedienpaneel backstage links
+aan staat of eventueel moet u de D.M.X. mergers in patch kast backstage links
+en in patch kast 11 (D Ser ruimte) herstarten. Let op de sluizen verlichting
+(Centrale ingang uitgezonderd) is niet uit te schakelen vanaf het touch scherm,
+om deze uit te schakelen dient u bij het dranger en sluizen bedienpaneel te
+zijn.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439379">Luiken en verlichting sturing/bediening omgewisseld</a></h3>
+
+</div>
+
+<p class=MsoNormal>Soms komt het voor bij het tegelijkertijd verwijderen van
+beide USB naar DMX Nodes dat de server niet meer “beseft” welke node voor welke
+&quot;D.M.X. universe&quot; was (Luiken of Verlichting) de eenvoudige manier om
+dit te verhelpen is door de Nodes op de kastjes zelf te wisselen van D.M.X.
+kabel. In de Visual D.M.X. Server softwarematig het D.M.X. universum opnieuw
+instellen is veel omslachtiger en onnodig. Dit probleem herken je als de stop
+knop bij de technische luiken bediening alle verlichting in 1 keer uit zet.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h3><a name="_Toc259439380">Bekijk wat Visual DMX server werkelijk doet</a></h3>
+
+</div>
+
+<p class=MsoNormal>Vanaf de Visual D.M.X. server computer kunt u zien wat er
+uitgestuurd word over de 2 D.M.X. lijnen. Gebruik hiervoor de K.V.M. switch om
+te wisselen naar de server computer. Waarna u in het menu kunt kiezen voor View
+DMX output. U krijgt een staafgrafiek te zien met in de horizontale as de
+verschillende DMX kanalen en de verticale as de waarde die uitgestuurd word. U
+kunt wisselen tussen&quot;universe&quot; (D.M.X. lijnen, Luiken of Licht) met
+behulp van het selectievak rechts boven. Vergeet a.u.b. niet om na gebruik weer
+terug te wisselen naar de bediencomputer.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DBE5F1 3.0pt;padding:0cm 0cm 0cm 0cm;background:#DBE5F1'>
+
+<h2>Versie Aanpassingen Overzicht:</h2>
+
+</div>
+
+<div style='border:none;border-top:solid #4F81BD 1.0pt;padding:2.0pt 0cm 0cm 0cm'>
+
+<h4 style='border:none;padding:0cm'>Openstaande items:</h4>
+
+</div>
+
+<p class=MsoNormal>Foto’s maken van: merger a en b, p11, groep 16, ups, pk bs </p>
+
+<p class=MsoNormal>OpenDMX node testen voor luiken aansturing</p>
+
+<p class=MsoNormal>Enntec Node testen voor dmx input. Met patch kabel</p>
+
+<p class=MsoNormal>Interface webluiken testen.</p>
+
+<p class=MsoNormal>Opslaan lichtstanden als tekst.</p>
+
+<p class=MsoNormal>Camera 100mbit full omschakel commando dagelijks meegeven na
+reboot camera. voor opstarten video feed dome camera
+meegeven:nphManipulateCamera?PAGE=Network&amp;CameraBandwidth=786432&amp;Save=ON</p>
+
+<p class=MsoNormal>Luiken op het scherm dezelfde naam als de fysieke
+installatie</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 5.0</h6>
+
+</div>
+
+<p class=MsoNormal>Webluiken controls gemaakt en getest.</p>
+
+<p class=MsoNormal>Alle iconen aangepast</p>
+
+<p class=MsoNormal>Server restart comando aangepast, zonder confirmatie
+probeert deze het 3 keer i.p.v. tot er confirmatie is van het herstart commando.</p>
+
+<p class=MsoNormal>Sommige knoppen in het beheer tabblad naar boven verplaatst.</p>
+
+<p class=MsoNormal>Screenshots voor documentatie bijgewerkt.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.10</h6>
+
+</div>
+
+<p class=MsoNormal>Deze versie is mede vanwege het aangepaste dmx universum,
+hierin zijn alle dmx kanalen aangepast.</p>
+
+<p class=MsoNormal>De manier waarop de server computers herstart kan worden
+vanaf een bedien computer is aangepast en werkt nu ook als de server computer
+niet direct de authorisatie van de bediencomputer goedkeurd of wanneer
+packetloss optreed. </p>
+
+<p class=MsoNormal>Het woord “documentatie” in de tabbladen aangepast naar
+“help”, dit past beter.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.9b</h6>
+
+</div>
+
+<p class=MsoNormal>Handleiding aangepast vanwege UPS versie 4.8 </p>
+
+<p class=MsoNormal>UPS NoodVoeding is aangewerkt.</p>
+
+<p class=MsoNormal>Orgelring als aparte permanente (Fader achtige) bediengroep.
+voor orgel werkzaamheden/repetities</p>
+
+<p class=MsoNormal>Waarschuwingsscherm voor uitval spanning UPS op bedien
+computer backstage links.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.8b</h6>
+
+</div>
+
+<p class=MsoNormal>Scherm schoonmaak knop in beheer tabblad.</p>
+
+<p class=MsoNormal>Opwarmen podiumverlichting verkort en feller gemaakt.Led
+orgelverlichting eruit gehaald. Vanwege toekomstige orgelring timer</p>
+
+<p class=MsoNormal>Dankzij Johan en Timo bleek de 3 uur loge timer sequence
+niet gekoppeld aan een knop.</p>
+
+<p class=MsoNormal>Documentatie tab in het touch scherm verwerkt. </p>
+
+<p class=MsoNormal> Server aanpassingen gedaan m.b.t.beheer op afstand.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.7b</h6>
+
+</div>
+
+<p class=MsoNormal>In de luiken sequence aansturing &quot;remove from active
+sequences&quot; commando verwijderd.</p>
+
+<p class=MsoNormal>De Open en Dicht sequences aangepast zodat deze 1 seconde
+wachten alvorens singaal uit te sturen.</p>
+
+<p class=MsoNormal>Luiken en licht pagina's omgedraaid in technische interface.</p>
+
+<p class=MsoNormal>Master fader besturing op eerste pagina gezet.</p>
+
+<p class=MsoNormal>Zaal 60 in het faderpaneel had nog geen selectiegroep,
+aangepast</p>
+
+<p class=MsoNormal>Aantal kleuren aangepast.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.6b</h6>
+
+</div>
+
+<p class=MsoNormal>In visual dmx server zijn veel aanpassingen gemaakt sinds
+vorige versie:</p>
+
+<p class=MsoNormal>Werkverlichting kan alleen nog timers bedienen.</p>
+
+<p class=MsoNormal>-De loges als extra timer groep opgenomen.</p>
+
+<p class=MsoNormal>-Podiumverlichting is uitgevoerd met een opwarmtijd van 1min
+waarbij de led's van de orgelverlichting groen pulseren</p>
+
+<p class=MsoNormal>Concertverlichting is Repetitie / BLVD Verlichting geworden
+en kan een permanente basis-stand sequence starten.</p>
+
+<p class=MsoNormal>-vanuit deze stand kan direct gekozen worden voor een
+uitloop timer of alles nu uitzetten.</p>
+
+<p class=MsoNormal>-Uitzetten in deze stand zal ook de bediening van timers en
+fadersequences stoppen. (Blackout)</p>
+
+<p class=MsoNormal>Technische bediening heeft een extra blad met directe fader
+en timer bediening.</p>
+
+<p class=MsoNormal>-Divided by 0 luiken vastloop error was eindelijk
+reproduceerbaar. En lag ergens diep bij de Luiken Fixture die tegelijk open en
+dicht kreeg.</p>
+
+<p class=MsoNormal>Bleek dat selectie commando's niet sequenteel worden
+aangestuurd maar tegelijk met het start commando van de eerste sequence.</p>
+
+<p class=MsoNormal>Hierdoor ontstaat een korte tik met OPEN en DICHT tegelijk
+als je commando's eerst over het ene luik en daarna over het</p>
+
+<p class=MsoNormal>andere luiken fixture aanstuurt. De luiken aansturing is nu
+anders: i.p.v. een selectie toewijzen -&gt; sequence herstarten.</p>
+
+<p class=MsoNormal>is nu Luiken Open en Dicht sequence stoppen -&gt; selectie
+toewijzen -&gt; sequence go. Waardoor deze tik niet meer plaats mag vinden.</p>
+
+<p class=MsoNormal>-Orginele knoppen zijn weg, Fingers crossed :)</p>
+
+<p class=MsoNormal>-De knoppen zijn nu allemaal direct te gebruiken zonder eerst
+op ok te moeten drukken.</p>
+
+<p class=MsoNormal>-Het aan en uitzetten van visual dmx is nu anders en
+hopelijk simpeler.</p>
+
+<p class=MsoNormal>-Via Timo viel op dat de selectie van de zijluiken niet een
+toggle maar aan Set selectie was.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.5b</h6>
+
+</div>
+
+<p class=MsoNormal>Documentatie voor CVTI geschreven te vinden op Doelen Shared
+NAS-01/TD/CVTI/CVTI Documentatie.doc</p>
+
+<p class=MsoNormal>Volgorde tabbladen aangepast, Meest gebruikte vooraan gezet
+en naast elkaar.</p>
+
+<p class=MsoNormal>Volgorde verlichtingsknoppen aangepast, gebruikers kiezen
+vaak het midden van het scherm voor activatie, daarom Werkverlichting in het
+Midden.(Meest gebruikt)</p>
+
+<p class=MsoNormal>Teksten aangepast. Code nu ook met toetsenbord invoerbaar.</p>
+
+<p class=MsoNormal>Log scherm niet meer zichtbaar in interface</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.4b</h6>
+
+</div>
+
+<p class=MsoNormal>CodeInvoerScherm word nu na 60 sec. afgesloten. (Dit scherm
+bleek hinderlijk voor gom medewerkers)</p>
+
+<p class=MsoNormal>Podium aanzetten met timers duurt een minuut vanwege
+opwarmen lampen.</p>
+
+<p class=MsoNormal>Het led orgellicht word rood 5 min voordat de podium timer
+uitloopt.</p>
+
+<p class=MsoNormal>Het led zaal licht zal ook rood worden 5 min voor uitlopen
+zaal timer.</p>
+
+<p class=MsoNormal>Inzoomen en uitzoomtimers verkort. naar 200 ms lijkt
+responsiever.</p>
+
+<p class=MsoNormal>Timers In VisualDMX Allemaal nagelopen in de werk interface.</p>
+
+<p class=MsoNormal>Zaal timers i.c.m. faderpaneel moet nog uitgebreider getest
+worden.</p>
+
+<p class=MsoNormal>VideoTimer Stopt nu 3 uur na starten en laat de camera de
+feed stoppen. Domecam word warm bij live feed.(Slijtage)</p>
+
+<p class=MsoNormal>Scherm gaat uit 3 uur na laatste bediening.</p>
+
+<p class=MsoNormal>Bij drukken op uitgeschakeld scherm worden geen commando's
+doorgegeven</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.3b</h6>
+
+</div>
+
+<p class=MsoNormal>VisualTouch word altijd 15 minuten na starten weer
+afgesloten behalve voor technische bediening.</p>
+
+<p class=MsoNormal>VideoFeeds Vervallen 3 uur na starten naar het
+zaalverlichtingskeuzescherm.</p>
+
+<p class=MsoNormal>Zoom werkt repeterend, bij ingedrukt houden zal deze elke
+seconde verder gezoomed worden.</p>
+
+<p class=MsoNormal>Alle errors worden nu ondervangen en zichtbaar in log.</p>
+
+<p class=MsoNormal>Brightness en focus knoppen voor de domecamera gemaakt</p>
+
+<p class=MsoNormal>Version &amp; Changes History leesbaar bij beheer.</p>
+
+<p class=MsoNormal>Dome Camera Herstart knop. De Dome Camera moet binnen 1
+minuut weer opkomen.</p>
+
+<p class=MsoNormal>Iconen gemaakt voor tabbladen, focus, zoom, brightness en
+startbedien knoppen.</p>
+
+<p class=MsoNormal>Alleen actieve tabbladen worden nu resized. Wat een snellere
+schakelsnelheid levert.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.2b</h6>
+
+</div>
+
+<p class=MsoNormal>Opslaan log file gemaakt</p>
+
+<p class=MsoNormal>dome camera mpeg 4 gemaakt</p>
+
+<p class=MsoNormal>Bedien elementen kleuren aangepast</p>
+
+<p class=MsoNormal>Server herstarten knop gemaakt.</p>
+
+<p class=MsoNormal>Veel kleine dingen in visual dmx gedaan.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.1b</h6>
+
+</div>
+
+<p class=MsoNormal>Text labels toegevoegd</p>
+
+<p class=MsoNormal>Kleuren layouttable op xp ook bij knoppen van kracht
+layouttable transp gemaakt</p>
+
+<p class=MsoNormal>Visual Touch word eerste keer gevraagd te sluiten, 2e keer
+worden alle visual touch die deze vraag gehad hebben gekilled.</p>
+
+<p class=MsoNormal>Visual touch word  niet meer op timer gekilled, maar alleen
+als de gebruiker een nieuwe instantie start.</p>
+
+<p class=MsoNormal>Informatie tab toegevoegd</p>
+
+<p class=MsoNormal>achtergrond zwart gemaakt, minder omgevingslicht</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 4.0b</h6>
+
+</div>
+
+<p class=MsoNormal>Schoon nieuw begin, op naar nieuwe beta</p>
+
+<p class=MsoNormal>video feed autoresize afhankelijk van scherm</p>
+
+<p class=MsoNormal>Knoppen interface e.d. ook afhankelijk van scherm</p>
+
+<p class=MsoNormal>Array camera blijft zelfs bij zeer kleine schermen het
+&quot;Luik&quot; weergeven</p>
+
+<p class=MsoNormal>Heel veel optimalisaties, weinig code en beheersbaar.</p>
+
+<p class=MsoNormal>Interface en knoppen kunnen over video heen getekend worden.</p>
+
+<p class=MsoNormal>Starten Van VisualTouch op betrouwbaarheid gemaakt, alle
+snelheids optimalisaties achterwege.</p>
+
+<p class=MsoNormal>VideoFeeds worden altijd gestopt wanneer niet zichtbaar.</p>
+
+<p class=MsoNormal>Fullscreen en Resizable Windows mogelijk</p>
+
+<p class=MsoNormal>Codeinput versimpeld en knoppen vergroot</p>
+
+<p class=MsoNormal>loading scherm is nu gewoon weg te clicken.</p>
+
+<p class=MsoNormal>VisualTouch word gemanaged. En niet gekilled. Na een tijdje
+worden ze gesloten als ze echt vast gelopen zijn.</p>
+
+<p class=MsoNormal>Installatie van VisualTouch, MPEG4 En MotionJpeg
+componenten.</p>
+
+<p class=MsoNormal>Dependancies verkleint</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 3.0a</h6>
+
+</div>
+
+<p class=MsoNormal>Verder verbertering van codes en stylesheets laden</p>
+
+<p class=MsoNormal>Meeste gebruikers kozen gelijk voor Fullscreen beeld. Beeld
+volledig schermvullend gemaakt</p>
+
+<p class=MsoNormal>Dome Camera bediening was &quot;onbegrijpelijk&quot;</p>
+
+<p class=MsoNormal>Zoom functie werkt te traag</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 2.3a</h6>
+
+</div>
+
+<p class=MsoNormal>Veel kleine verbeteringen vooral met de forms en hoe die
+geladen worden.</p>
+
+<p class=MsoNormal>Het word tijd voor een nieuwe versie. Alle Verschillende
+test feeds enzo maken het onoverzichtelijk</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 2.2a</h6>
+
+</div>
+
+<p class=MsoNormal>Verdere verbeteringen gevonden voor het weergeven van video
+feeds.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 2.1a</h6>
+
+</div>
+
+<p class=MsoNormal>VisualDMX 34 is weer fixtures kwijt. VisualDMX 33 backup
+terug gezet.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 2.0a</h6>
+
+</div>
+
+<p class=MsoNormal>Visual DMX Server 34 Opnieuw geinstaleerd.</p>
+
+<p class=MsoNormal>Alle fixtures nagekeken</p>
+
+<p class=MsoNormal>Alle Sequences zijn nagekeken</p>
+
+<p class=MsoNormal>Presets zijn nagekeken</p>
+
+<p class=MsoNormal>en vooral de luiken action  buttons.</p>
+
+<p class=MsoNormal>Visual DMX toevoegingen gemaakt.</p>
+
+<p class=MsoNormal>Luiken 1 min open en dicht, aangepast verbeterd.</p>
+
+<p class=MsoNormal>Bepaalde delen van de werkverlichting aangepast.</p>
+
+<p class=MsoNormal>Verder opgeschoond, kleuren knoppen aangepast.</p>
+
+<p class=MsoNormal>faders als actionset gemaakt.</p>
+
+<p class=MsoNormal>De manier waarop tijdklokken lopen toegevoegd. (Zodra de
+klok aan is licht aan, i.p.v. zodra die afloopt licht uit)</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 1.9a</h6>
+
+</div>
+
+<p class=MsoNormal>Visual DMX Server Puur Stand Alone Gemaakt, Visual Manager
+draait alleen nog maar log's</p>
+
+<p class=MsoNormal>Dit besloten nadat omschakeling van versie 33 naar 34 vele
+crashes veroorzaakte.</p>
+
+<p class=MsoNormal>Vooral bij bediening luiken, Daarnaast waren fixtures soms
+niet terug te vinden.</p>
+
+<p class=MsoNormal><span lang=EN-US>En kregen we divided by 0 errors. </span>Nu
+kan ik in ieder geval zeggen dat het niet door mijn </p>
+
+<p class=MsoNormal>applicaties komt.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 1.8a</h6>
+
+</div>
+
+<p class=MsoNormal>Constante videofeeds geven problemen bij de nachtelijke
+reboot.</p>
+
+<p class=MsoNormal>Sommige Settings worden niet goed overgenomen door backstage
+client</p>
+
+<p class=MsoNormal>nog veel moeite met de array cam's en de strenge regelgeving
+op server.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 1.7a</h6>
+
+</div>
+
+<p class=MsoNormal>HTML verder bewerkt, veel javascript toegevoegd zodat alles
+sneller is.</p>
+
+<p class=MsoNormal>De VideoFeed blijft nu constant aktief. Testen wat de
+ervaringen zijn.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 1.6a</h6>
+
+</div>
+
+<p class=MsoNormal>Html StyleSheet, server IP, en andere configuratie opties
+gemaakt.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 1.5a</h6>
+
+</div>
+
+<p class=MsoNormal>Na de test, juiste schaling en positie instellingen programatisch
+gemaakt.</p>
+
+<p class=MsoNormal>SoftwareOntwikkeling vergemakkelijkt door automatische
+updates.</p>
+
+<p class=MsoNormal>verder op pc's File Sharing aangezet en de mogelijkheid voor
+remote monitoringen en reboot van de server.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 1.4a</h6>
+
+</div>
+
+<p class=MsoNormal>Dome Camera ook in HTML Browser objecten geplaatst. (Why Not)</p>
+
+<p class=MsoNormal>Clipping en positioneren afhankelijk van resolutie is nu
+inzichtelijk.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 1.3a</h6>
+
+</div>
+
+<p class=MsoNormal>Test met Clipping Forms, en per computer defineerbare
+settings.</p>
+
+<p class=MsoNormal>Array Camera Video Browsers Settings gemaakt om met de
+verschillende camera's op verschillende pc's</p>
+
+<p class=MsoNormal>configuraties te testen</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 1.2a</h6>
+
+</div>
+
+<p class=MsoNormal>Array Camera's control lopen samen direct vast in windows 7.</p>
+
+<p class=MsoNormal>ArrayCamera's in losse HTML Browser objecten geplaatst.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 1.1a</h6>
+
+</div>
+
+<p class=MsoNormal>Array camera's getest in 2 losse browsers in een applicatie,
+dit werkt.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 1.0a</h6>
+
+</div>
+
+<p class=MsoNormal>Array Camera's Toegevoegd, Deze geven problemen (Memory
+leaks) Waarschijnlijk de directdraw die op een verkeerde</p>
+
+<p class=MsoNormal>plek aan het schrijven is. In een Iframe word naar een DOM
+object gevraagd wat dezelfde pagina oplevert met een control</p>
+
+<p class=MsoNormal>met dezelfde naam maar dit is een geheel ander object.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 0.9a</h6>
+
+</div>
+
+<p class=MsoNormal>Dome Camera is nog steeds niet helemaal stabiel (MJPEG)
+Modus gemaakt van de javascript control</p>
+
+<p class=MsoNormal>Audio Dome Camera Uitgezet</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 0.8a</h6>
+
+</div>
+
+<p class=MsoNormal>Dome Fullscreen optie toegevoegd (Geeft problemen)</p>
+
+<p class=MsoNormal>Kleinere iconen en knoppen gemaakt voor kleine interfaces</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 0.7a</h6>
+
+</div>
+
+<p class=MsoNormal>Help Interface Gemaakt. Geen idee wat de vragen zijn
+trouwens.</p>
+
+<p class=MsoNormal>Dome Camera Als aparte javascript control pagina geladen
+(Iframe liep soms vast)</p>
+
+<p class=MsoNormal>Visual DMX configuratie 4</p>
+
+<p class=MsoNormal>Concertstanden uitgewerkt, voor alle sequences in de fader
+langzame sequences gemaakt</p>
+
+<p class=MsoNormal>VisualDMX van build 31 naar build 33 versie update. Was veel
+werk. De doelen luiken fixtures overgebracht.</p>
+
+<p class=MsoNormal>Echter bleken andere dimmer fixtures niet meer leesbaar voor
+de nieuwe versie.</p>
+
+<p class=MsoNormal>Fixtures ook opnieuw moeten toevoegen was veeeeeeeeel werk.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 0.6a</h6>
+
+</div>
+
+<p class=MsoNormal>Visual touch starten geoptimaliseerd, herhaaldelijk zelfde
+starten is nu sneller</p>
+
+<p class=MsoNormal>Laden scherm toegevoegd</p>
+
+<p class=MsoNormal>Input scherm voor code</p>
+
+<p class=MsoNormal>Codes als configuratie gemaakt</p>
+
+<p class=MsoNormal>Visual Touch Presets gemaakt voor verschillende pcs</p>
+
+<p class=MsoNormal>Visual Touch Achtergronden voor verschillende resoluties
+gemaakt</p>
+
+<p class=MsoNormal>Afhankelijk van resolutie worden de juiste achtergronden aan
+visual touch gekoppeld.</p>
+
+<p class=MsoNormal>Visual DMX configuratie 3: Faders gemaakt Veel getest met
+sequences, selections en actions.</p>
+
+<p class=MsoNormal>Alle programmer resets verwijderd, en vervangen voor remove
+from selection.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 0.5a</h6>
+
+</div>
+
+<p class=MsoNormal>Dome Cam Toegevoegd, als IFRAME component</p>
+
+<p class=MsoNormal>Interface voor presets en zoom gemaakt.</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 0.4a</h6>
+
+</div>
+
+<p class=MsoNormal>BUG Opgelost Lokatie van BG Images is verschillend op
+verschillende talen. Special Folder ident gebruikt</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 0.31a</h6>
+
+</div>
+
+<p class=MsoNormal>Visual Touch batch files vervangen door vb.net</p>
+
+<p class=MsoNormal>Visual DMX configuratie 2</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 0.3a</h6>
+
+</div>
+
+<p class=MsoNormal>HTML Interface Style en Text gescheiden. Voor Cabine PC met
+een lagere resolutie</p>
+
+<p class=MsoNormal>Visual DMX configuratie 1: 3 verschillende interfaces
+gemaakt voor bediening</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>Versie 0.2a</h6>
+
+</div>
+
+<p class=MsoNormal>HTML Interface toegevoegd voor toekomstige IP Cams</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'>versie 0.1a</h6>
+
+</div>
+
+<p class=MsoNormal>Visual DMX Server Manager (herstarten en blackouts beperken)</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h6 style='border:none;padding:0cm'><span lang=EN-US>Versie 0a</span></h6>
+
+</div>
+
+<p class=MsoNormal><span lang=EN-US>MS Dos batch Files.</span></p>
+
+</div>
+
+</body>
+
+</html>
