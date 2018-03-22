@@ -1,5 +1,14 @@
 # CVTI
 Camera &amp; Visual Touch Interface
 
-Visual Studio .NET framework for complex touch based lighting controls systems using .NET usercontrols and buffered output while using Enntec Open DMX USB Node drivers
-https://www.enttec.com/eu/products/controls/dmx-usb/open-dmx-usb/
+![Windows Screenshot](http://jonnyhoeven.github.io/images/cvti.jpg)
+
+Visual Studio .NET 2015 (VB.net)
+
+Kiosk mode and facilities expect a usert without any keyboard access.
+
+Allows incorperation of  https://github.com/jonnyhoeven/DMXControl, 
+Does not include networking code for client -> OpenDMX Node Server setup (it was dropped early on in favour of commercial solutions).
+
+IP Camera control and viewer
+Auto update for all clients from a central location
