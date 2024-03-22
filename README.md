@@ -1,4 +1,3 @@
-# CVTI
 Camera &amp; Visual Touch Interface
 
 
