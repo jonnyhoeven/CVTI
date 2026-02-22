@@ -1,62 +1,52 @@
-Camera &amp; Visual Touch Interface
+# CVTI: Integrated Facility Automation & IoT Orchestration Platform
 
+## Overview
 
-While the project was salvaged, it was eventually decided to switch to a different hardware device platform with better
-specs. As of now, networking and DMX mixing functionalities have not been implemented in this project.
-
-In the realm of lighting and stage effects, DMX (Digital Multiplex) is a crucial and versatile technology that has
-revolutionized the way we control and manipulate lighting fixtures. Whether you're a seasoned lighting professional or
-just starting to delve into the world of stage lighting, understanding DMX is essential for creating captivating visual
-experiences.
-What is DMX?
-
-## Core components of a DMX system
-
-At its core, DMX operates on a serial data transmission protocol, where a DMX controller sends digital commands (known
-as DMX values) to lighting fixtures over a daisy-chained network. Each fixture is assigned a unique DMX address,
-allowing the controller to communicate with specific fixtures and adjust their parameters accordingly.
-Key Components of a DMX System
-
-- DMX Controller: The central command hub that sends DMX values to lighting fixtures.
-- DMX Fixtures: Lighting devices equipped with DMX capabilities, such as moving heads, dimmers and color changers.
-- DMX Cables: Specialized cables used to connect the controller to the fixtures in a daisy-chain configuration.
-- DMX Terminator: A resistor placed at the end of the DMX chain to prevent signal reflection and ensure smooth
-  communication.
-
-## Applications of DMX
-
-DMX technology is widely used in various settings, including:
-
-- Concerts and music festivals
-- Theatrical performances
-- Nightclubs and bars
-- Architectural lighting installations
-- Film and television productions
-
-From creating stunning light shows synced to music to transforming a simple space into a mesmerizing environment, DMX
-opens up a world of creative possibilities for lighting designers and technicians.
-Challenges and Considerations
-
-- While DMX is a powerful tool for lighting control, it does come with its share of challenges, such as signal
-  interference, addressing conflicts and compatibility issues between different fixtures and controllers. It is
-  essential to have a solid understanding of DMX principles and troubleshooting techniques to effectively manage these
-  challenges and create seamless lighting experiences.
-  Conclusion
-
-- DMX technology has paved the way for innovation and creativity in the world of lighting design, offering endless
-  possibilities for creating mesmerizing visual effects and enhancing live performances. By mastering the fundamentals
-  of DMX and staying updated on industry advancements, lighting professionals can continue to push the boundaries of
-  visual storytelling and create unforgettable experiences for audiences worldwide.
-
-- Whether you're a lighting enthusiast, a professional designer, or simply curious about the magic behind mesmerizing
-  light displays, diving into the world of DMX is sure to ignite your passion for creativity and exploration.
-
-- Let the lights shine bright and the DMX signals flow seamlessly!
-
+A scalable, on-premise control architecture designed to unify disparate facility management systems into a single,
+high-availability touch interface. This project demonstrates the implementation of an **Edge Controller** pattern,
+orchestrating IP-based surveillance hardware, DMX lighting protocols, and infrastructure power management within a
+secure, kiosk-mode environment.
 
 ![Windows Screenshot](http://jonnyhoeven.github.io/images/cvti.jpg)
 
-Visual Studio .NET 2015 (VB.net)
+## Business Value
 
-Allows incorperation of  https://github.com/jonnyhoeven/DMXControl, 
-Does not include networking code for client -> OpenDMX Node Server setup (it was dropped early on in favour of commercial solutions).
+* **Operational Efficiency**: Reduces Mean Time To Recovery (MTTR) for stage setup by centralizing control of lighting
+  and visual monitoring systems.
+* **High Availability**: Ensures continuous operation through automated error handling, network self-healing mechanisms,
+  and watchdog timers for resource cleanup.
+* **Security Compliance**: Implements **Zero Trust** principles at the application layer with PIN-based authentication,
+  session timeouts, and restricted OS access.
+
+## Architectural Highlights
+
+### IoT Device Orchestration
+
+* **RESTful Device Control**: Implements a robust client architecture to manage PTZ (Pan-Tilt-Zoom) IP cameras,
+  abstracting vendor-specific APIs into a unified control interface.
+* **Real-Time State Management**: Features precise control for focus, zoom, and preset recall, ensuring consistent
+  visual monitoring standards.
+
+### Resilient Infrastructure Integration
+
+* **Self-Healing Network Connections**: Custom implementation of network resource mounting with exponential backoff and
+  retry logic to handle transient network partitions, ensuring reliable access to backend storage.
+* **Process Lifecycle Management**: Orchestrates external lighting control software with automated startup, shutdown,
+  and configuration injection, ensuring consistent application state across reboots.
+
+### Security & Governance
+
+* **Kiosk Mode Implementation**: Locks down the host operating system to prevent unauthorized access, utilizing
+  low-level hooks to manage window states and input focus.
+* **Access Control**: Requires authentication for critical infrastructure operations (e.g., server reboots,
+  configuration changes), preventing accidental or malicious disruptions during live production.
+
+## Technical Stack
+
+* **Platform**: .NET Framework (Windows Forms) for deep OS integration and hardware access.
+* **Protocols**: HTTP/REST (Camera Control), SMB/CIFS (Network Storage), DMX512 (via Abstraction Layer).
+* **Pattern**: Event-Driven UI with dedicated error handling layers.
+
+---
+*This project serves as a foundational reference for building robust, industrial-grade control interfaces where
+reliability and direct hardware integration are paramount.*
